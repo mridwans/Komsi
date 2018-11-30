@@ -3,6 +3,9 @@ package com.example.user.komsi;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +16,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+
+
+//private final LinkedList<String> mWordList = new LinkedList<>();
+//private int mCount = 0;
+
+
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private RecyclerView recyclerView;
+    private ItemAdapter adapter;
+    private ArrayList<Item> itemArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +42,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "HAHAHAHHAA...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -40,6 +55,33 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        //recyclerview
+        addData();
+        recyclerView =(RecyclerView) findViewById(R.id.recycler_view);
+        adapter=new ItemAdapter(itemArrayList);
+        RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(MainActivity.this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+
+    }
+
+    void addData(){
+        itemArrayList=new ArrayList<>();
+        itemArrayList.add(new Item("Folder 1","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 2","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 3","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 4","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 5","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 6","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 1","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 2","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 3","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 4","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 5","12/11/2018","Budi","13.03"));
+        itemArrayList.add(new Item("Folder 6","12/11/2018","Budi","13.03"));
+
     }
 
     @Override
@@ -80,17 +122,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_editprofil) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_mydocuments) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_datauser) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_search) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_logout) {
 
         }
 
