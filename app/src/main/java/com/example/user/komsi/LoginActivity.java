@@ -13,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     RelativeLayout rellay1, rellay2;
 
     Handler handler = new Handler();
+
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
