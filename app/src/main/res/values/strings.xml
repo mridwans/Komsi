@@ -7,4 +7,11 @@
     <string name="nav_header_subtitle">123456789</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_search">Search</string>
+    <string name="show">Show</string>
+    <string name="tambah_folder">Tambah Folder</string>
+    <string name="nama_folder">Nama Folder</string>
+    <string name="sukses_msg">Folder berhasil ditambahkan</string>
+    <string name="kosong_msg">Nama folder harus diisi</string>
+    <string name="submit">Submit</string>
+    <string name="tambah">Tambah</string>
 </resources>

@@ -265,7 +265,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnSubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/relativeLayout7"
@@ -274,7 +274,7 @@
                 android:textColor="@color/white"
                 android:layout_alignRight="@+id/relativeLayout7"
                 android:layout_marginBottom="13dp"
-                android:text="Submit" />
+                android:text="@string/submit"/>
 
 
         </RelativeLayout>
