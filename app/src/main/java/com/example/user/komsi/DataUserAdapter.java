@@ -6,10 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.AbstractCollection;
 import java.util.ArrayList;
 
 public class DataUserAdapter extends RecyclerView.Adapter<DataUserAdapter.DataUserViewHolder> {
-    private ArrayList<DataUserModel> dataList;
+
+
+    public ArrayList<DataUserModel> dataList;
 
     public DataUserAdapter(ArrayList<DataUserModel> dataList) {
         this.dataList = dataList;
