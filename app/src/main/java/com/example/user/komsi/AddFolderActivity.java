@@ -13,7 +13,7 @@ public class AddFolderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_folder);
+        setContentView(R.layout.tambah_folder);
 
         Button mShow = (Button) findViewById(R.id.btnShow);
         mShow.setOnClickListener(new View.OnClickListener() {

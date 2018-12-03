@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -16,6 +17,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -43,10 +47,31 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),TambahPenggunaActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(getApplicationContext(),AddFolderActivity.class);
+                //startActivity(intent);
                 /*Snackbar.make(view, "HAHAHAHHAA...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();*/
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
+                View mView = getLayoutInflater().inflate(R.layout.tambah_folder,null);
+                final EditText mNamaFolder = (EditText) mView.findViewById(R.id.etNamaFold);
+                Button mSubmit = (Button) mView.findViewById(R.id.btnTambah);
+
+                mSubmit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(!mNamaFolder.getText().toString().isEmpty()){
+                            Toast.makeText(MainActivity.this,
+                                    R.string.sukses_msg, Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(MainActivity.this,
+                                    R.string.kosong_msg, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+                mBuilder.setView(mView);
+                AlertDialog dialog = mBuilder.create();
+                dialog.show();
             }
         });
 
@@ -126,7 +151,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_editprofil) {
-            // Handle the camera action
+            Intent intent = new Intent(MainActivity.this,TambahPenggunaActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_mydocuments) {
 
         } else if (id == R.id.nav_datauser) {

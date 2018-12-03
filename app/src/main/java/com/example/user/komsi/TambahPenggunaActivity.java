@@ -20,7 +20,7 @@ public class TambahPenggunaActivity extends AppCompatActivity {
         mbtnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),AddFolderActivity.class);
+                Intent intent = new Intent(TambahPenggunaActivity.this,DataUserActivity.class);
                 startActivity(intent);
             }
         });

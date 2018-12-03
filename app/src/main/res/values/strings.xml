@@ -7,9 +7,7 @@
     <string name="nav_header_subtitle">123456789</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_search">Search</string>
-<<<<<<< HEAD
     <string name="title_activity_data_user">DataUserActivity</string>
-=======
     <string name="show">Show</string>
     <string name="tambah_folder">Tambah Folder</string>
     <string name="nama_folder">Nama Folder</string>
@@ -17,5 +15,4 @@
     <string name="kosong_msg">Nama folder harus diisi</string>
     <string name="submit">Submit</string>
     <string name="tambah">Tambah</string>
->>>>>>> origin/ridwan
 </resources>
