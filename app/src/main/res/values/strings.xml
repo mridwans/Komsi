@@ -16,8 +16,7 @@
     <string name="kosong_msg">Nama folder harus diisi</string>
     <string name="submit">Submit</string>
     <string name="tambah">Tambah</string>
-<<<<<<< HEAD
-=======
+
     <string name="title_date_range_picker_example">Date Range Picker</string>
 
     <string-array name="android_dropdown_arrays">
@@ -30,5 +29,5 @@
         <item>Daftar Drop Down  7</item>
         <item>Daftar Drop Down  8</item>
     </string-array>
->>>>>>> origin/ridwan
+
 </resources>

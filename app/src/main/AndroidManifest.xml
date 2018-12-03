@@ -20,23 +20,15 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-<<<<<<< HEAD
             android:theme="@style/TambahPenggunaActivityTheme" />
         <activity
             android:name=".DataUserActivity"
             android:label="@string/title_activity_data_user" />
-=======
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".DataUserActivity"
-            android:label="@string/title_activity_data_user"
-            android:theme="@style/AppTheme"></activity>
-            android:theme="@style/TambahPenggunaActivityTheme" />
->>>>>>> origin/ridwan
+
         <activity android:name=".TambahPenggunaActivity" />
         <activity android:name=".AddFolderActivity" />
         <activity android:name=".AddEventActivity" />
-        <activity android:name=".AddFolderActivity"></activity>
     </application>
 
 </manifest>
