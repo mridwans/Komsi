@@ -9,9 +9,23 @@
     <string name="action_search">Search</string>
     <string name="show">Show</string>
     <string name="tambah_folder">Tambah Folder</string>
+    <string name="tambah_event">Tambah Event</string>
     <string name="nama_folder">Nama Folder</string>
     <string name="sukses_msg">Folder berhasil ditambahkan</string>
     <string name="kosong_msg">Nama folder harus diisi</string>
     <string name="submit">Submit</string>
     <string name="tambah">Tambah</string>
+    <string name="title_date_range_picker_example">Date Range Picker</string>
+
+    <string-array name="android_dropdown_arrays">
+        <item>Pilih Tag</item>
+        <item>Daftar Drop Down  1</item>
+        <item>Daftar Drop Down  2</item>
+        <item>Daftar Drop Down  3</item>
+        <item>Daftar Drop Down  5</item>
+        <item>Daftar Drop Down  6</item>
+        <item>Daftar Drop Down  7</item>
+        <item>Daftar Drop Down  8</item>
+    </string-array>
+
 </resources>

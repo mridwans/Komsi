@@ -21,7 +21,8 @@
             android:label="@string/title_activity_main"
             android:theme="@style/TambahPenggunaActivityTheme" />
         <activity android:name=".TambahPenggunaActivity" />
-        <activity android:name=".AddFolderActivity"></activity>
+        <activity android:name=".AddFolderActivity" />
+        <activity android:name=".AddEventActivity" />
     </application>
 
 </manifest>
