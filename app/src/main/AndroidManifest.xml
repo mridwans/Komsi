@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/TambahPenggunaActivityTheme">
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +19,17 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
+<<<<<<< HEAD
             android:theme="@style/AppTheme" />
         <activity
             android:name=".DataUserActivity"
             android:label="@string/title_activity_data_user"
             android:theme="@style/AppTheme"></activity>
+=======
+            android:theme="@style/TambahPenggunaActivityTheme" />
+        <activity android:name=".TambahPenggunaActivity" />
+        <activity android:name=".AddFolderActivity"></activity>
+>>>>>>> origin/ridwan
     </application>
 
 </manifest>
