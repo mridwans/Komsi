@@ -7,6 +7,7 @@
     <string name="nav_header_subtitle">123456789</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_search">Search</string>
+    <string name="title_activity_data_user">DataUserActivity</string>
     <string name="show">Show</string>
     <string name="tambah_folder">Tambah Folder</string>
     <string name="tambah_event">Tambah Event</string>
@@ -27,5 +28,4 @@
         <item>Daftar Drop Down  7</item>
         <item>Daftar Drop Down  8</item>
     </string-array>
-
 </resources>

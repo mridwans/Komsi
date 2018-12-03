@@ -128,6 +128,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_mydocuments) {
 
         } else if (id == R.id.nav_datauser) {
+            Intent intent = new Intent(MainActivity.this,DataUserActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_search) {
             Intent intent = new Intent(MainActivity.this,DateRangePickerActivity.class);
