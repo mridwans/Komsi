@@ -1,5 +1,6 @@
 package com.example.user.komsi;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,8 @@ public class AddFolderActivity extends AppCompatActivity {
                         if(!mNamaFolder.getText().toString().isEmpty()){
                             Toast.makeText(AddFolderActivity.this,
                                     R.string.sukses_msg, Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(AddFolderActivity.this,AddEventActivity.class);
+                            startActivity(intent);
                         }else {
                             Toast.makeText(AddFolderActivity.this,
                                     R.string.kosong_msg, Toast.LENGTH_SHORT).show();
@@ -40,6 +43,7 @@ public class AddFolderActivity extends AppCompatActivity {
                 mBuilder.setView(mView);
                 AlertDialog dialog = mBuilder.create();
                 dialog.show();
+
 
             }
         });
