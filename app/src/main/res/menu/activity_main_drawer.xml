@@ -21,6 +21,10 @@
             android:icon="@drawable/ic_menu_manage"
             android:title="Search by Tag and/or Time" />
         <item
+            android:id="@+id/nav_logkegiatan"
+            android:icon="@drawable/ic_twitter"
+            android:title="Log Kegiatan"/>
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_twitter"
             android:title="Log Out"/>

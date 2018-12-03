@@ -19,6 +19,10 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DataUserActivity"
+            android:label="@string/title_activity_data_user"
             android:theme="@style/AppTheme"></activity>
     </application>
 
