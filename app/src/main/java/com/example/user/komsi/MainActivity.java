@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity
                 //startActivity(intent);
                 /*Snackbar.make(view, "HAHAHAHHAA...", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();*/
+
+                //Tambah event
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
                 View mView = getLayoutInflater().inflate(R.layout.tambah_folder,null);
                 final EditText mNamaFolder = (EditText) mView.findViewById(R.id.etNamaFold);
@@ -160,8 +162,12 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_search) {
-
-        } else if (id == R.id.nav_logout) {
+            Intent intent = new Intent(MainActivity.this,SearchActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_log) {
+            Intent intent = new Intent(MainActivity.this, LogActivity.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_logout) {
 
         }
 

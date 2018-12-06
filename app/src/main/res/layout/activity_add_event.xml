@@ -38,27 +38,13 @@
                     android:textSize="25sp"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
-                    android:text="@string/tambah_event" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="18sp"
-                    android:text=" Nama Event\t:"
-                    android:textStyle="bold"/>
-                <EditText
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:hint="Tulis Nama Event yang Telah Terjadi"/>
+                    android:text="@string/tambah_kegiatan" />
 
                 <TextView
                     android:id="@+id/tv_dateresult"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=" Tanggal event : "
+                    android:text=" Tanggal Kegiatan : "
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:layout_marginTop="20dp"/>
@@ -66,10 +52,41 @@
                     android:id="@+id/bt_datepicker"
                     android:background="@color/royalblue"
                     android:textColor="@color/white"
-                    android:text="Pilih Waktu Event"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:text="Pilih Tanggal Kegiatan"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
                     android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/tv_timeresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Waktu Kegiatan : "
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="20dp"/>
+                <Button
+                    android:id="@+id/bt_timepicker"
+                    android:background="@color/royalblue"
+                    android:textColor="@color/white"
+                    android:text="Pilih Waktu Kegiatan"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18sp"
+                    android:text=" Tempat\t:"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Tulis Lokasi Kegiatan diadakan"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -106,47 +123,41 @@
                         android:entries="@array/android_dropdown_arrays"/>
                 </LinearLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Button
-
-                        style="?android:attr/buttonStyleSmall"
-                        android:background="@color/royalblue"
-                        android:textColor="@color/white"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginRight="120dp"
-                        android:text="Add Subfolder"
-                        android:layout_centerInParent="true" />
-                </RelativeLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingRight="10dp">
                     <Button
                         style="?android:attr/buttonStyleSmall"
-
-                        android:background="@color/firebrick"
+                        android:id="@+id/btnAddSub"
+                        android:background="@color/royalblue"
                         android:textColor="@color/white"
-                        android:layout_width="115dp"
+                        android:layout_width="125dp"
                         android:layout_height="wrap_content"
-                        android:text="Cancel"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="120dp"
+                        android:text="Add Subfolder"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        />
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:background="@color/royalblue"
+                        android:textColor="@color/white"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add File"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
                         />
                     <Button
                         style="?android:attr/buttonStyleSmall"
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
                         android:layout_width="100dp"
-                        android:paddingRight="25dp"
+                        android:paddingRight="31dp"
                         android:layout_height="wrap_content"
                         android:text="Submit"
-
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/btnSubmit"
                         />
                 </LinearLayout>
 

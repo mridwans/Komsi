@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.komsi">
 
     <application
@@ -24,11 +23,15 @@
         <activity
             android:name=".DataUserActivity"
             android:label="@string/title_activity_data_user" />
-            android:theme="@style/AppTheme" />
-
+        android:theme="@style/AppTheme" />
         <activity android:name=".TambahPenggunaActivity" />
-        <activity android:name=".AddFolderActivity" />
         <activity android:name=".AddEventActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".AddSubfolderActivity" />
+        <activity android:name=".ListItemActivity" />
+        <activity android:name=".LogActivity" />
+        <activity android:name=".AddSubSubFolderActivity" />
+        <activity android:name=".MyDocumentActivity"></activity>
     </application>
 
 </manifest>

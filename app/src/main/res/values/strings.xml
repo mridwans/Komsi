@@ -10,14 +10,18 @@
     <string name="title_activity_data_user">DataUserActivity</string>
     <string name="show">Show</string>
     <string name="tambah_folder">Tambah Folder</string>
-    <string name="tambah_event">Tambah Event</string>
+    <string name="tambah_kegiatan">Tambah Kegiatan</string>
     <string name="nama_folder">Nama Folder</string>
     <string name="sukses_msg">Folder berhasil ditambahkan</string>
     <string name="kosong_msg">Nama folder harus diisi</string>
     <string name="submit">Submit</string>
     <string name="tambah">Tambah</string>
+    <string name="tambah_subfolder">Tambah Subfolder</string>
+    <string name="nama_subfolder">Nama Folder</string>
+    <string name="tambah_sub">Tambah</string>
 
     <string name="title_date_range_picker_example">Date Range Picker</string>
+    <string name="search">Search</string>
 
     <string-array name="android_dropdown_arrays">
         <item>Pilih Tag</item>

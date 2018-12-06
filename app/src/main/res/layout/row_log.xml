@@ -3,26 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/nav_header_vertical_spacing"
     card_view:cardCornerRadius="6dp"
     card_view:cardElevation="3dp"
     card_view:cardUseCompatPadding="true">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:orientation="vertical"
         android:padding="5dp">
 
-        <!-- TextView Nama User -->
         <TextView
-            android:id="@+id/txt_nama_user"
+            android:id="@+id/nama_log"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- TextView Nip -->
         <TextView
-            android:id="@+id/txt_nip_user"
+            android:id="@+id/kegiatan_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tanggal_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/jam_log"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
