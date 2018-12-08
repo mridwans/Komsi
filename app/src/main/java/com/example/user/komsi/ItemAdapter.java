@@ -10,7 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
-    private ArrayList<Item> dataList;
+    public ArrayList<Item> dataList;
 
     public ItemAdapter(ArrayList<Item> dataList){
         this.dataList=dataList;

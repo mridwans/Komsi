@@ -38,7 +38,7 @@
                     android:textSize="25sp"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
-                    android:text="@string/nama_kegiatan" />
+                    android:text="komsi" />
 
                 <TextView
                     android:id="@+id/tv_dateresult"
