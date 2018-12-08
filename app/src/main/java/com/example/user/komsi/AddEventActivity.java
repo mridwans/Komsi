@@ -32,7 +32,7 @@ public class AddEventActivity extends AppCompatActivity {
     private TextView tvTimeResult;
     private Button btTimePicker;
     private TimePickerDialog timePickerDialog;
-    private Button mbtnSubmit;
+    private Button mbtnOK;
     private Button mbtnAddSub;
 
     private Spinner spinner1;
@@ -77,17 +77,17 @@ public class AddEventActivity extends AppCompatActivity {
         spinner1 = (Spinner) findViewById(R.id.spinner);
         spinner1.setOnItemSelectedListener(new ItemSelectedListener());
 
-        mbtnSubmit = (Button)findViewById(R.id.btnSubmit);
+        mbtnOK = (Button)findViewById(R.id.btnOK);
 
-        mbtnSubmit.setOnClickListener(new View.OnClickListener() {
+        mbtnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AddEventActivity.this,AddSubfolderActivity.class);
+                Intent intent = new Intent(AddEventActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
 
-        mbtnAddSub = (Button)findViewById(R.id.btnAddSub);
+        /*mbtnAddSub = (Button)findViewById(R.id.btnAddSub);
 
         mbtnAddSub.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,7 +115,7 @@ public class AddEventActivity extends AppCompatActivity {
                 dialog.show();
             }
 
-        });
+        });*/
     }
 
     private void showTimeDialog() {

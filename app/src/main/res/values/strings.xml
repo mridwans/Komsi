@@ -12,6 +12,7 @@
     <string name="tambah_folder">Tambah Folder</string>
     <string name="tambah_kegiatan">Tambah Kegiatan</string>
     <string name="nama_folder">Nama Folder</string>
+    <string name="nama_kegiatan">Nama Kegiatan</string>
     <string name="sukses_msg">Folder berhasil ditambahkan</string>
     <string name="kosong_msg">Nama folder harus diisi</string>
     <string name="submit">Submit</string>
