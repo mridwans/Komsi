@@ -36,7 +36,8 @@
                     android:layout_width="50dp"
                     android:padding="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/pengguna"
+                    android:src="@drawable/form"
+                    android:tint="@color/white"
                     android:background="@drawable/circle"
                     android:layout_height="50dp" />
                 
@@ -75,7 +76,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/user"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/username"/>
                 
                 <EditText
                     android:layout_width="match_parent"
@@ -104,7 +106,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/password"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/passw"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -133,7 +136,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/cp"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/passw"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -162,7 +166,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/nama"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/saya"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -191,7 +196,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/nid"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/nids"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -220,7 +226,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/email"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/ema"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -249,7 +256,8 @@
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
                     android:padding="8dp"
-                    android:src="@drawable/hp"/>
+                    android:tint="@color/white"
+                    android:src="@drawable/no"/>
 
                 <EditText
                     android:layout_width="match_parent"
