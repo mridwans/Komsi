@@ -22,7 +22,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.user.komsi.model.User;
+import com.example.user.komsi.remote.UserService;
+
 import java.util.ArrayList;
+import java.util.List;
 
 //private final LinkedList<String> mWordList = new LinkedList<>();
 //private int mCount = 0;
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity
     private RecyclerView recyclerView;
     private ItemAdapter adapter;
     private ArrayList<Item> itemArrayList;
+    UserService userService;
+    List<User> list = new ArrayList<User>();
     SwipeController swipeController = null;
 
     @Override

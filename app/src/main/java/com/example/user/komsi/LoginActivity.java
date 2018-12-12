@@ -11,7 +11,6 @@ import android.widget.RelativeLayout;
 public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout rellay1, rellay2;
-
     Handler handler = new Handler();
 
     Runnable runnable = new Runnable() {
@@ -32,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
         rellay2 = (RelativeLayout) findViewById(R.id.rellay2);
 
-        handler.postDelayed(runnable, 2000); //2000 is the timeout for the splash
+        handler.postDelayed(runnable, 1000); //2000 is the timeout for the splash
     }
 
     public void loginClick( View view){
