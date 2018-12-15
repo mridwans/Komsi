@@ -56,24 +56,24 @@ public class DataUserActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
 
-        swipeController = new SwipeController(new SwipeControllerActions() {
+       /* swipeController = new SwipeController(new SwipeControllerActions() {
             @Override
             public void onRightClicked(int position) {
                 adapter.dataList.remove(position);
                 adapter.notifyItemRemoved(position);
                 adapter.notifyItemRangeChanged(position, adapter.getItemCount());
             }
-        });
+        });*/
 
-        ItemTouchHelper itemTouchhelper = new ItemTouchHelper(swipeController);
-        itemTouchhelper.attachToRecyclerView(recyclerView);
+        //ItemTouchHelper itemTouchhelper = new ItemTouchHelper(swipeController);
+        //itemTouchhelper.attachToRecyclerView(recyclerView);
 
-        recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
+        /*recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override
             public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
                 swipeController.onDraw(c);
             }
-        });
+        });*/
 
     }
 
