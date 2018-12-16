@@ -80,6 +80,7 @@
                     android:src="@drawable/username"/>
                 
                 <EditText
+                    android:id="@+id/txtUsername"
                     android:layout_width="match_parent"
                     android:hint="Username"
                     android:layout_height="wrap_content"
@@ -110,6 +111,7 @@
                     android:src="@drawable/passw"/>
 
                 <EditText
+                    android:id="@+id/txtPassword"
                     android:layout_width="match_parent"
                     android:hint="Password"
                     android:layout_height="wrap_content"
@@ -140,6 +142,7 @@
                     android:src="@drawable/passw"/>
 
                 <EditText
+                    android:id="@+id/txtCPassword"
                     android:layout_width="match_parent"
                     android:hint="Confirm Password"
                     android:layout_height="wrap_content"
@@ -170,6 +173,7 @@
                     android:src="@drawable/saya"/>
 
                 <EditText
+                    android:id="@+id/txtName"
                     android:layout_width="match_parent"
                     android:hint="Nama"
                     android:layout_height="wrap_content"
@@ -200,6 +204,7 @@
                     android:src="@drawable/nids"/>
 
                 <EditText
+                    android:id="@+id/txtNIP"
                     android:layout_width="match_parent"
                     android:hint="NID"
                     android:layout_height="wrap_content"
@@ -230,6 +235,7 @@
                     android:src="@drawable/ema"/>
 
                 <EditText
+                    android:id="@+id/txtEmail"
                     android:layout_width="match_parent"
                     android:hint="Email"
                     android:layout_height="wrap_content"
@@ -260,6 +266,7 @@
                     android:src="@drawable/no"/>
 
                 <EditText
+                    android:id="@+id/txtPhone"
                     android:layout_width="match_parent"
                     android:hint="No.Handphone"
                     android:layout_height="wrap_content"

@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void Login(){
-        String url="http://ridwan.rirfanuddin.id/api_lama/public/api/login";
+        String url="http://ridwan.rirfanuddin.id/api_baru/public/api/login";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
