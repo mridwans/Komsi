@@ -33,7 +33,6 @@
         <activity android:name=".ListItemActivity" />
         <activity android:name=".LogActivity" />
         <activity android:name=".AddSubSubFolderActivity" />
-        <activity android:name=".MyDocumentActivity" />
         <activity android:name=".EventActivity"></activity>
     </application>
 

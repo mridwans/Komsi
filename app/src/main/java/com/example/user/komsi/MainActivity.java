@@ -178,9 +178,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_editprofil) {
             Intent intent = new Intent(MainActivity.this,TambahPenggunaActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_mydocuments) {
-            Intent intent = new Intent(MainActivity.this,MyDocumentActivity.class);
-            startActivity(intent);
+
 
         } else if (id == R.id.nav_datauser) {
             Intent intent = new Intent(MainActivity.this,DataUserActivity.class);
