@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity
         recyclerView.setAdapter(adapter);
 
 
-        swipeController = new SwipeController(new SwipeControllerActions() {
+        /*swipeController = new SwipeController(new SwipeControllerActions() {
             @Override
             public void onRightClicked(int position) {
                 adapter.dataList.remove(position);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity
             public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
                 swipeController.onDraw(c);
             }
-        });
+        });*/
 
     }
 
