@@ -22,6 +22,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.user.komsi.adapter.ItemAdapter;
+import com.example.user.komsi.model.Item;
+
 import java.util.ArrayList;
 
 //private final LinkedList<String> mWordList = new LinkedList<>();
@@ -175,10 +178,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_editprofil) {
-            Intent intent = new Intent(MainActivity.this,TambahPenggunaActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_mydocuments) {
+        if (id == R.id.nav_mydocuments) {
             Intent intent = new Intent(MainActivity.this,MyDocumentActivity.class);
             startActivity(intent);
 

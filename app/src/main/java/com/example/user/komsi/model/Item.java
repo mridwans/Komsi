@@ -1,16 +1,17 @@
-package com.example.user.komsi;
+package com.example.user.komsi.model;
 
-public class Log {
+public class Item {
     private String nama;
-    private String kegiatan;
     private String tanggal;
+    private String pembuat;
     private String jam;
 
-    public Log(String nama, String kegiatan, String tanggal, String jam){
+    public Item(String nama, String tanggal, String pembuat, String jam){
         this.nama=nama;
-        this.kegiatan=kegiatan;
         this.tanggal=tanggal;
+        this.pembuat=pembuat;
         this.jam=jam;
+
     }
 
     public String getNama(){
@@ -21,20 +22,20 @@ public class Log {
         this.nama = nama;
     }
 
-    public String getKegiatan() {
-        return kegiatan;
-    }
-
-    public void setKegiatan(String kegiatan) {
-        this.kegiatan = kegiatan;
-    }
-
     public String getTanggal(){
         return tanggal;
     }
 
     public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
+    }
+
+    public String getPembuat() {
+        return pembuat;
+    }
+
+    public void setPembuat(String pembuat) {
+        this.pembuat = pembuat;
     }
 
     public String getJam() {
@@ -44,5 +45,4 @@ public class Log {
     public void setJam(String jam) {
         this.jam = jam;
     }
-
 }

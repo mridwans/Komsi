@@ -1,4 +1,4 @@
-package com.example.user.komsi;
+package com.example.user.komsi.model;
 
 public class DataUserModel {
     private String username;

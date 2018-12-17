@@ -1,4 +1,4 @@
-package com.example.user.komsi;
+package com.example.user.komsi.model;
 
 /**
  * Created by ASUS on 12/7/2018.

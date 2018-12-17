@@ -27,7 +27,6 @@ import java.util.Map;
 public class TambahPenggunaActivity extends AppCompatActivity {
 
     RelativeLayout relativeLayout2, relativeLayout3, relativeLayout4, relativeLayout5, relativeLayout6, relativeLayout7;
-
     private Button mbtnSubmit ;
     EditText txtPassword, txtCPassword, txtName, txtNIP, txtEmail, txtPhone;
 
@@ -61,15 +60,15 @@ public class TambahPenggunaActivity extends AppCompatActivity {
 
         handler.postDelayed(runnable, 2000); //2000 is the timeout for the splash
 
-        mbtnSubmit = (Button)findViewById(R.id.btnSubmit);
         /*txtUsername = (EditText) findViewById(R.id.txtUsername);*/
+        txtName = (EditText) findViewById(R.id.txtName);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
         txtCPassword = (EditText) findViewById(R.id.txtCPassword);
-        txtName = (EditText) findViewById(R.id.txtName);
         txtNIP = (EditText) findViewById(R.id.txtNIP);
         txtEmail = (EditText) findViewById(R.id.txtEmail);
         txtPhone = (EditText) findViewById(R.id.txtPhone);
 
+        mbtnSubmit = (Button)findViewById(R.id.btnSubmit);
 
         /*mbtnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,9 +121,9 @@ public class TambahPenggunaActivity extends AppCompatActivity {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<>();
                 /*params.put("username", txtUsername.getText().toString().trim());*/
+                params.put("name", txtName.getText().toString().trim());
                 params.put("password",txtPassword.getText().toString().trim());
                 params.put("c_password",txtCPassword.getText().toString().trim());
-                params.put("name", txtName.getText().toString().trim());
                 params.put("nip",txtNIP.getText().toString().trim());
                 params.put("email",txtEmail.getText().toString().trim());
                 params.put("phone", txtPhone.getText().toString().trim());

@@ -51,9 +51,9 @@ public class LoginActivity extends AppCompatActivity {
 
         handler.postDelayed(runnable, 2000); //2000 is the timeout for the splash
 
-/*        btnLogin.findViewById(R.id.btnLogin);
-        username.findViewById(R.id.username);
-        password.findViewById(R.id.password);*/
+//        btnLogin.findViewById(R.id.btnLogin);
+//        username.findViewById(R.id.username);
+//        password.findViewById(R.id.password);
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         txtEmail = (EditText) findViewById(R.id.txtEmail);

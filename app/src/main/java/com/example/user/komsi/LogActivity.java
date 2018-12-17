@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.user.komsi.adapter.LogAdapter;
+import com.example.user.komsi.model.Log;
+
 import java.util.ArrayList;
 
 public class LogActivity extends AppCompatActivity {

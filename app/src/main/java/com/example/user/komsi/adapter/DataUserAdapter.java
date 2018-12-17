@@ -1,4 +1,4 @@
-package com.example.user.komsi;
+package com.example.user.komsi.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.AbstractCollection;
+import com.example.user.komsi.R;
+import com.example.user.komsi.model.DataUserModel;
+
 import java.util.ArrayList;
 
 public class DataUserAdapter extends RecyclerView.Adapter<DataUserAdapter.DataUserViewHolder> {
